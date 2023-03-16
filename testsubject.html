@@ -54,7 +54,65 @@
         <div style="height:75%;"></div>
         <!--upper first page-->
 
+        <!--bottom first page-->
+        <div style="height:25%;">
 
+            <!--left of first page-->
+            <div class="column" style="background-color:white; padding-top: 1rem;">
+                <h2 style="margin-top: 15%;"><u>Rooms/Facilities</u></h2>   
+            </div>
+            <!--left of first page-->
+
+            <!--right of first page-->
+              <div class="column" style="background-color:white; padding-top: 1rem;">
+                <p style="margin-top: 15%;">Insert description about the room/facilities/services offered</p>
+              </div>
+            <!--right of first page-->
+
+        </div>
+        <!--bottom first page-->
+
+    </div>
+    <!--first page-->
+
+    <!--second page-->
+    <div class="fullscreen">
+
+        <div style="height:100%;">
+
+            <!--left half of the page-->
+            <div class="column left" style="background-color:whitesmoke">
+                <h2 style="margin-top: 15%; font-size: 40px;">Room type</h2>
+                <p style="height: 35%;">&nbsp</p>
+                <div style="font-size: 20px;">
+                <p>Bed type || King</p>
+                <p>Fits two person</p>
+                <p>(This is just a sample text)</p>
+                <p style="height: 15%;">&nbsp</p>
+                <button style="font-size: medium;">Reserve</button>
+                </div>
+              </div>
+            <!--left half of the page-->
+
+            <!--right half of the page-->
+            <div class="column right" id="rightimgcolumn" style="padding-top: 90vh;">
+                <input type="radio" name="navigation" id="r1" onclick="changeBackground('images/Deluxe Double King Room.jpg')">
+                <input type="radio" name="navigation" id="r2" onclick="changeBackground('images/Deluxe Double Queen Room.jpg')">
+                <input type="radio" name="navigation" id="r3" onclick="changeBackground('images/Deluxe Single Room.jpg')">                
+            </div>
+            
+            <!--js script to change the right half of the page-->
+            <script>
+                function changeBackground(url){
+                    document.getElementById("rightimgcolumn").style.backgroundImage = "url('" + url + "')";
+                }
+            </script>   
+            <!--right half of the page-->         
+            
+        </div>
+
+    </div>
+    <!--second page-->
 
 </body>
 </html>
