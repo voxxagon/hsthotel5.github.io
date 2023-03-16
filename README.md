@@ -1,0 +1,1 @@
+# hsthotel5.github.io
