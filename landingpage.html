@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            background-size: cover;
+            font-family: Georgia;
+        }
+
+        /*for navigation bar*/
+        .navbar{
+            font-size: 20px;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: fixed;
+        }
+        .logo{
+            width: 4%;
+            height: 4%;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .navbar ul li a::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: peachpuff;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+        .navbar ul li a:hover::after{
+            width: 100%;
+        }
+        /*for navigation bar*/
+
+        /*for making a fullscreen page*/
+        .fullscreen{
+            height:100vh;
+            background-color: whitesmoke;
+        }
+        /*for making a fullscreen page*/
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-top{
+            width: 50%;
+        }
+
+        .flex-bottom{
+            width: 100%;
+        }
+
+        .shadow-border{
+            background-color: #FBFAF5;
+            border: 0px solid black; margin: 1%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); height: 90%;
+            border-radius: 1%;
+            height: 90%;
+        }
+
+        .center{
+            text-align: center;
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fullscreen">
+
+        <!--navigation bar-->
+        <div class="navbar" style="background-color:rgba(0,0,0,1)">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a>ADMIN PAGE</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="style2.html">About</a></li>
+                <li><a href="style3.html">Rooms</a></li>
+                <li><a href="style4.html">Facilities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--navigation bar-->
+
+        <div style="height: 9%;"></div>
+        
+        <div class="flex-container" style="height: 40%;">
+            <div class="flex-top">
+                <div class="shadow-border">
+                    <p class="center">Account Details</p>
+                </div>
+            </div>
+            <div class="flex-top">
+                <div class="shadow-border">
+                    <p class="center">Statistics</p>
+                    <p>Number of Customers: </p>
+                    <p>Number of Customers: </p>
+                    <p>Number of Customers: </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container" style="height: 50%;">
+            <div class="flex-bottom">
+                <div class="shadow-border">
+                    <p class="center">Reports</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

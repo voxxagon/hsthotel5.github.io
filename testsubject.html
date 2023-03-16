@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test for Rooms/Facilities</title>
+    <link rel="stylesheet" href="testsubject.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav class="nav-bar">
+                <div class="nav-branding"><a href="index.css"><img src="images/logo.png" alt=""></a></div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="testsubject.html">About</a></li>
+                    <li class="nav-item"><a href="style3.html">Rooms</a></li>
+                    <li class="nav-item"><a href="style4.html">Facilities</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!--first page-->
+    <div class="fullscreen" style="background-image: url(images/Standard\ Single.jpg);">
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+    </script>
+
+        <!--upper first page-->
+        <div style="height:75%;"></div>
+        <!--upper first page-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* contact.html uses this */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Book Antiqua;
+}
+html{
+    background-image: url(https://wallpaperaccess.com/full/1695610.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    width: 85;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: peachpuff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
