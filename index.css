@@ -81,10 +81,19 @@ header{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-
+.center-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 3.125rem;
+}
 
 /* for gay ass mobile view */
 @media (max-width:1000px){
+    
     .hamburger{
         display: block;
     }
@@ -121,37 +130,49 @@ header{
     .nav-menu.active{
         left: 0;
     }
+    
+    .center-text{
+        font-size: 2rem;
+    }
 }
 
-.center-text{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: white;
-    font-size: 3.125rem;
-}
+
 
 @keyframes change {
     0%{
         background: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
     }
     25%{
-        background-image: url('image/bg1.jpg');
+        background-image: url('images/Deluxe\ Single\ Room.jpg');
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
     }
     50%{
-        background-image: url('image/bg2.jpg');
+        background-image: url('images/Deluxe\ Double\ Queen\ Room.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
     }
     75%{
-        background-image: url('image/bg3.jpg');
+        background-image: url('images/Deluxe\ Double\ King\ Room.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
     }
     100%{
-        background-image: url('image/bg4.jpg');
+        background-image: url('images/Deluxe\ Double\ Queen\ Room.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
     }
 }
