@@ -126,7 +126,7 @@ input[type='radio'] {
 /*for buttons*/
 
 
-/* for gay ass mobile view */
+/* for mobile view */
 @media screen and (max-width:768px){
     .hamburger{
         display: block;
@@ -163,5 +163,14 @@ input[type='radio'] {
 
     .nav-menu.active{
         left: 0;
+    }
+
+
+    p{
+        font-size: 10px;
+    }
+
+    h2{
+        font-size: 15px;
     }
 }
